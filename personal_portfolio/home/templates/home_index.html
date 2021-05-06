@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static  %}
+{% block page_content %}
+
+<head>
+    <link rel="stylesheet"  href="{%  static 'css/home.css'  %}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+
+</head>
+
+<body>
+
+<div class="container"> 
+    <h1>Home</h1>	
+    <div class="row">
+      <!--
+    <img src="{% static banner.image %}" class="img-fluid" alt="Responsive image">
+        -->
+    </div>
+  <div class "row">
+      <header>
+      <img src="{% static 'images/profile_pic_sq.png'  %}" alt="Me on a hike" class="profile-image">
+      <h1 class="tag name">Hello, I’m Alexander</h1>
+      <p class="tag location"> &#128205; Lund, Sweden</p>
+    </header>
+  </div>
+</div>
+
+</body>
+{% endblock %}
+
